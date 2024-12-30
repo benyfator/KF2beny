@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killing Floor 2 Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #444;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .button-container {
+            margin: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            background-color: #666;
+            color: #fff;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #888;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            display: none;
+        }
+        .sub-info {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #777;
+            border-radius: 5px;
+            background-color: #2e2e2e;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Killing Floor 2</h1>
+        <p>Узнайте о мобах, оружии и классах!</p>
+    </header>
+
+    <div class="button-container">
+        <button onclick="showInfo('mobs')">Мобы</button>
+        <button onclick="showInfo('weapons')">Оружие</button>
+        <button onclick="showInfo('classes')">Классы</button>
+    </div>
+
+    <div id="info-container">
+        <div id="mobs" class="info">
+            <h2>Мобы</h2>
+            <p>В Killing Floor 2 представлены различные виды зедов. Нажмите на кнопку, чтобы узнать о них подробнее:</p>
+            <div class="button-container">
+                <button onclick="showSubInfo('clot')">Клот</button>
+                <button onclick="showSubInfo('crawler')">Краулер</button>
+                <button onclick="showSubInfo('gorefast')">Горфаст</button>
+                <button onclick="showSubInfo('scrake')">Скрейк</button>
+                <button onclick="showSubInfo('fleshpound')">Флешпаунд</button>
+                <button onclick="showSubInfo('bosses')">Боссы</button>
+            </div>
+            <div id="sub-info-container">
+                <div id="clot" class="sub-info">
+                    <p>Введите описание для Клота здесь.</p>
+                </div>
+                <div id="crawler" class="sub-info">
+                    <p>Введите описание для Краулера здесь.</p>
+                </div>
+                <div id="gorefast" class="sub-info">
+                    <p>Введите описание для Горфаста здесь.</p>
+                </div>
+                <div id="scrake" class="sub-info">
+                    <p>Введите описание для Скрейка здесь.</p>
+                </div>
+                <div id="fleshpound" class="sub-info">
+                    <p>Введите описание для Флешпаунда здесь.</p>
+                </div>
+                <div id="bosses" class="sub-info">
+                    <p>Введите описание для Боссов здесь.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="weapons" class="info">
+            <h2>Оружие</h2>
+            <p>Игра предлагает широкий выбор оружия. Нажмите на кнопку, чтобы узнать о них подробнее:</p>
+            <div class="button-container">
+                <button onclick="showSubInfo('pistol')">Пистолеты</button>
+                <button onclick="showSubInfo('rifle')">Винтовки</button>
+                <button onclick="showSubInfo('shotgun')">Дробовики</button>
+                <button onclick="showSubInfo('melee')">Ближний бой</button>
+            </div>
+            <div id="sub-info-container">
+                <div id="pistol" class="sub-info">
+                    <p>Введите описание для Пистолетов здесь.</p>
+                </div>
+                <div id="rifle" class="sub-info">
+                    <p>Введите описание для Винтовок здесь.</p>
+                </div>
+                <div id="shotgun" class="sub-info">
+                    <p>Введите описание для Дробовиков здесь.</p>
+                </div>
+                <div id="melee" class="sub-info">
+                    <p>Введите описание для Ближнего боя здесь.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="classes" class="info">
+            <h2>Классы</h2>
+            <p>В игре есть несколько классов. Нажмите на кнопку, чтобы узнать о них подробнее:</p>
+            <div class="button-container">
+                <button onclick="showSubInfo('medic')">Медик</button>
+                <button onclick="showSubInfo('sharpshooter')">Снайпер</button>
+                <button onclick="showSubInfo('berserker')">Берсерк</button>
+                <button onclick="showSubInfo('support')">Поддержка</button>
+                <button onclick="showSubInfo('commandos')">Коммандос</button>
+                <button onclick="showSubInfo('firebug')">Поджигатель</button>
+                <button onclick="showSubInfo('demolitionist')">Подрывник</button>
+                <button onclick="showSubInfo('gunslinger')">Стрелок</button>
+                <button onclick="showSubInfo('survivalist')">Выживший</button>
+            </div>
+            <div id="sub-info-container">
+                <div id="medic" class="sub-info">
+                    <p>Введите описание для Медика здесь.</p>
+                </div>
+                <div id="sharpshooter" class="sub-info">
+                    <p>Введите описание для Снайпера здесь.</p>
+                </div>
+                <div id="berserker" class="sub-info">
+                    <p>Введите описание для Берсерка здесь.</p>
+                </div>
+                <div id="support" class="sub-info">
+                    <p>Введите описание для Поддержки здесь.</p>
+                </div>
+                <div id="commandos" class="sub-info">
+                    <p>Введите описание для Коммандоса здесь.</p>
+                </div>
+                <div id="firebug" class="sub-info">
+                    <p>Введите описание для Поджигателя здесь.</p>
+                </div>
+                <div id="demolitionist" class="sub-info">
+                    <p>Введите описание для Подрывника здесь.</p>
+                </div>
+                <div id="gunslinger" class="sub-info">
+                    <p>Введите описание для Стрелка здесь.</p>
+                </div>
+                <div id="survivalist" class="sub-info">
+                    <p>Введите описание для Выжившего здесь.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(section) {
+            const sections = document.querySelectorAll('.info');
+            sections.forEach(div => div.style.display = 'none');
+
+            const target = document.getElementById(section);
+            if (target) {
+                target.style.display = 'block';
+            }
+        }
+
+        function showSubInfo(subSection) {
+            const subSections = document.querySelectorAll('.sub-info');
+            subSections.forEach(div => div.style.display = 'none');
+
+            const target = document.getElementById(subSection);
+            if (target) {
+                target.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
